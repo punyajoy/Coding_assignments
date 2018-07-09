@@ -1,0 +1,7 @@
+#lang racket
+(defun sum (numbers)
+  (if (null numbers)
+      0
+      (+ (first numbers) (sum (rest numbers)))))
+
+(sum '(1 3 2))
