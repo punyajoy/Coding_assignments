@@ -1,0 +1,45 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.ZeroR 
+Relation:     CFS_bestfirst_bank
+Instances:    45211
+Attributes:   6
+              martial
+              housing
+              loan
+              duration
+              poutcome
+              y
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+ZeroR predicts class value: no
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       39922               88.3015 %
+Incorrectly Classified Instances      5289               11.6985 %
+Kappa statistic                          0     
+Mean absolute error                      0.2066
+Root mean squared error                  0.3214
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances            45211     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1.000    1.000    0.883      1.000    0.938      ?        0.500     0.883     no
+                 0.000    0.000    ?          0.000    ?          ?        0.500     0.117     yes
+Weighted Avg.    0.883    0.883    ?          0.883    ?          ?        0.500     0.793     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 39922     0 |     a = no
+  5289     0 |     b = yes
+

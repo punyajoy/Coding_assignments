@@ -1,0 +1,74 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.bayes.NaiveBayes 
+Relation:     bank-oner
+Instances:    45211
+Attributes:   5
+              age
+              martial
+              education
+              housing
+              y
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Naive Bayes Classifier
+
+                 Class
+Attribute           no     yes
+                (0.88)  (0.12)
+===============================
+age
+  mean          40.8499  41.722
+  std. dev.      9.8991 13.2736
+  weight sum      39922    5289
+  precision      1.0132  1.0132
+
+martial
+  married       24460.0  2756.0
+  single        10879.0  1913.0
+  divorced       4586.0   623.0
+  [total]       39925.0  5292.0
+
+education
+  tertiary      11306.0  1997.0
+  secondary     20753.0  2451.0
+  unknown        1606.0   253.0
+  primary        6261.0   592.0
+  [total]       39926.0  5293.0
+
+housing
+  yes           23196.0  1936.0
+  no            16728.0  3355.0
+  [total]       39924.0  5291.0
+
+
+
+Time taken to build model: 0.05 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       39855               88.1533 %
+Incorrectly Classified Instances      5356               11.8467 %
+Kappa statistic                          0.0533
+Mean absolute error                      0.1967
+Root mean squared error                  0.3156
+Relative absolute error                 95.2079 %
+Root relative squared error             98.202  %
+Total Number of Instances            45211     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.993    0.961    0.886      0.993    0.937      0.101    0.661     0.926     no
+                 0.039    0.007    0.430      0.039    0.072      0.101    0.661     0.227     yes
+Weighted Avg.    0.882    0.849    0.833      0.882    0.836      0.101    0.661     0.844     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 39648   274 |     a = no
+  5082   207 |     b = yes
+

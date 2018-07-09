@@ -1,0 +1,48 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     Ranker_CorelationAttr_eval
+Instances:    45211
+Attributes:   5
+              campaign
+              month
+              balance
+              job
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 13.53 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       37817               83.6456 %
+Incorrectly Classified Instances      7394               16.3544 %
+Kappa statistic                          0.1154
+Mean absolute error                      0.1871
+Root mean squared error                  0.355 
+Relative absolute error                 90.5617 %
+Root relative squared error            110.4464 %
+Total Number of Instances            45211     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.923    0.820    0.895      0.923    0.909      0.117    0.613     0.911     no
+                 0.180    0.077    0.237      0.180    0.205      0.117    0.613     0.189     yes
+Weighted Avg.    0.836    0.733    0.818      0.836    0.826      0.117    0.613     0.827     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 36866  3056 |     a = no
+  4338   951 |     b = yes
+

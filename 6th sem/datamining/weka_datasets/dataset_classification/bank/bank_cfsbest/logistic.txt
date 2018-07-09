@@ -1,0 +1,77 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     CFS_bestfirst_bank
+Instances:    45211
+Attributes:   6
+              martial
+              housing
+              loan
+              duration
+              poutcome
+              y
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                      Class
+Variable                 no
+===========================
+martial=married      0.1971
+martial=single      -0.2302
+martial=divorced    -0.0052
+housing=no          -1.0381
+loan=yes             0.6086
+duration            -0.0039
+poutcome=unknown      0.638
+poutcome=failure    -0.0775
+poutcome=other      -0.2905
+poutcome=success    -2.3638
+Intercept            3.4986
+
+
+Odds Ratios...
+                      Class
+Variable                 no
+===========================
+martial=married      1.2179
+martial=single       0.7943
+martial=divorced     0.9948
+housing=no           0.3541
+loan=yes             1.8378
+duration             0.9961
+poutcome=unknown     1.8926
+poutcome=failure     0.9254
+poutcome=other       0.7479
+poutcome=success     0.0941
+
+
+Time taken to build model: 1.86 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       40632               89.8719 %
+Incorrectly Classified Instances      4579               10.1281 %
+Kappa statistic                          0.3697
+Mean absolute error                      0.1494
+Root mean squared error                  0.2757
+Relative absolute error                 72.3283 %
+Root relative squared error             85.7685 %
+Total Number of Instances            45211     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.977    0.689    0.915      0.977    0.945      0.398    0.876     0.979     no
+                 0.311    0.023    0.638      0.311    0.418      0.398    0.876     0.508     yes
+Weighted Avg.    0.899    0.611    0.882      0.899    0.883      0.398    0.876     0.924     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 38987   935 |     a = no
+  3644  1645 |     b = yes
+

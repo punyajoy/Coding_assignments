@@ -1,0 +1,193 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.OneR -B 6
+Relation:     bank-full
+Instances:    45211
+Attributes:   17
+              age
+              job
+              marital
+              education
+              default
+              balance
+              housing
+              loan
+              contact
+              day
+              month
+              duration
+              campaign
+              pdays
+              previous
+              poutcome
+              y
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+duration:
+	< 561.5	-> no
+	< 562.5	-> yes
+	< 614.5	-> no
+	< 615.5	-> yes
+	< 648.5	-> no
+	< 649.5	-> yes
+	< 650.5	-> no
+	< 651.5	-> yes
+	< 653.5	-> no
+	< 654.5	-> yes
+	< 657.5	-> no
+	< 658.5	-> yes
+	< 661.5	-> no
+	< 664.5	-> yes
+	< 668.5	-> no
+	< 671.5	-> yes
+	< 675.5	-> no
+	< 676.5	-> yes
+	< 685.5	-> no
+	< 688.5	-> yes
+	< 690.5	-> no
+	< 691.5	-> yes
+	< 695.5	-> no
+	< 696.5	-> yes
+	< 700.5	-> no
+	< 701.5	-> yes
+	< 703.5	-> no
+	< 705.5	-> yes
+	< 706.5	-> no
+	< 712.5	-> yes
+	< 715.5	-> no
+	< 716.5	-> yes
+	< 719.5	-> no
+	< 720.5	-> yes
+	< 730.5	-> no
+	< 733.5	-> yes
+	< 735.5	-> no
+	< 737.5	-> yes
+	< 738.5	-> no
+	< 740.5	-> yes
+	< 744.5	-> no
+	< 746.5	-> yes
+	< 761.5	-> no
+	< 763.5	-> yes
+	< 766.5	-> no
+	< 767.5	-> yes
+	< 780.5	-> no
+	< 784.5	-> yes
+	< 800.5	-> no
+	< 803.5	-> yes
+	< 807.5	-> no
+	< 809.5	-> yes
+	< 811.5	-> no
+	< 815.5	-> yes
+	< 827.5	-> no
+	< 830.5	-> yes
+	< 836.5	-> no
+	< 843.5	-> yes
+	< 847.5	-> no
+	< 849.5	-> yes
+	< 852.5	-> no
+	< 860.5	-> yes
+	< 870.5	-> no
+	< 882.5	-> yes
+	< 887.0	-> no
+	< 897.5	-> yes
+	< 900.5	-> no
+	< 904.5	-> yes
+	< 909.5	-> no
+	< 911.5	-> yes
+	< 916.5	-> no
+	< 918.5	-> yes
+	< 921.5	-> no
+	< 923.5	-> yes
+	< 929.5	-> no
+	< 934.5	-> yes
+	< 937.5	-> no
+	< 946.5	-> yes
+	< 953.5	-> no
+	< 963.5	-> yes
+	< 966.5	-> no
+	< 968.5	-> yes
+	< 973.5	-> no
+	< 985.5	-> yes
+	< 990.5	-> no
+	< 1008.5	-> yes
+	< 1014.5	-> no
+	< 1025.5	-> yes
+	< 1029.5	-> no
+	< 1035.5	-> yes
+	< 1037.5	-> no
+	< 1046.5	-> yes
+	< 1058.5	-> no
+	< 1081.5	-> yes
+	< 1088.5	-> no
+	< 1095.5	-> yes
+	< 1100.5	-> no
+	< 1105.5	-> yes
+	< 1108.5	-> no
+	< 1112.5	-> yes
+	< 1118.5	-> no
+	< 1143.5	-> yes
+	< 1148.5	-> no
+	< 1155.0	-> yes
+	< 1173.5	-> no
+	< 1183.5	-> yes
+	< 1188.5	-> no
+	< 1194.0	-> yes
+	< 1200.5	-> no
+	< 1211.5	-> yes
+	< 1221.5	-> no
+	< 1235.0	-> yes
+	< 1241.5	-> no
+	< 1253.0	-> yes
+	< 1261.5	-> no
+	< 1276.5	-> yes
+	< 1289.0	-> no
+	< 1360.5	-> yes
+	< 1386.5	-> no
+	< 1401.0	-> yes
+	< 1416.5	-> no
+	< 1422.5	-> yes
+	< 1436.0	-> no
+	< 1471.5	-> yes
+	< 1481.0	-> no
+	< 1732.5	-> yes
+	< 1783.5	-> no
+	< 1818.5	-> yes
+	< 1862.0	-> no
+	< 1878.5	-> yes
+	< 1958.5	-> no
+	< 1986.0	-> yes
+	< 2225.0	-> no
+	< 2822.5	-> yes
+	>= 2822.5	-> no
+(40449/45211 instances correct)
+
+
+Time taken to build model: 0.11 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       40040               88.5625 %
+Incorrectly Classified Instances      5171               11.4375 %
+Kappa statistic                          0.2055
+Mean absolute error                      0.1144
+Root mean squared error                  0.3382
+Relative absolute error                 55.357  %
+Root relative squared error            105.2244 %
+Total Number of Instances            45211     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.982    0.838    0.898      0.982    0.938      0.250    0.572     0.898     no
+                 0.162    0.018    0.537      0.162    0.249      0.250    0.572     0.185     yes
+Weighted Avg.    0.886    0.742    0.856      0.886    0.857      0.250    0.572     0.815     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 39185   737 |     a = no
+  4434   855 |     b = yes
+

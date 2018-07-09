@@ -1,0 +1,4 @@
+https://archive.ics.uci.edu/ml/datasets/Automobile
+https://archive.ics.uci.edu/ml/datasets/Forest+Fires
+https://archive.ics.uci.edu/ml/datasets/Computer+Hardware
+https://archive.ics.uci.edu/ml/datasets/Concrete+Slump+Test

@@ -1,0 +1,49 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     CFS_bestfirst_bank
+Instances:    45211
+Attributes:   6
+              martial
+              housing
+              loan
+              duration
+              poutcome
+              y
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 11.11 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       39768               87.9609 %
+Incorrectly Classified Instances      5443               12.0391 %
+Kappa statistic                          0.3386
+Mean absolute error                      0.145 
+Root mean squared error                  0.3075
+Relative absolute error                 70.1648 %
+Root relative squared error             95.6773 %
+Total Number of Instances            45211     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.950    0.652    0.917      0.950    0.933      0.344    0.799     0.958     no
+                 0.348    0.050    0.480      0.348    0.404      0.344    0.799     0.405     yes
+Weighted Avg.    0.880    0.581    0.866      0.880    0.871      0.344    0.799     0.893     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 37926  1996 |     a = no
+  3447  1842 |     b = yes
+

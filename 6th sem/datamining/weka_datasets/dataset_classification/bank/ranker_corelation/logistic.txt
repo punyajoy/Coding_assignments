@@ -1,0 +1,108 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     Ranker_CorelationAttr_eval
+Instances:    45211
+Attributes:   5
+              campaign
+              month
+              balance
+              job
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                       Class
+Variable                  no
+============================
+campaign              0.1076
+month=may             0.4904
+month=jun             0.0348
+month=jul              0.115
+month=aug            -0.0558
+month=oct            -1.5944
+month=nov             0.1902
+month=dec            -1.7555
+month=jan             0.2142
+month=feb            -0.4106
+month=mar            -1.9794
+month=apr            -0.6388
+month=sep            -1.6967
+balance                   -0
+job=management       -0.1668
+job=technician       -0.0066
+job=entrepreneur      0.2501
+job=blue-collar       0.3307
+job=unknown           0.0806
+job=retired           -0.521
+job=admin.           -0.0539
+job=services           0.146
+job=self-employed    -0.0579
+job=unemployed       -0.2539
+job=housemaid         0.3406
+job=student          -0.8748
+Intercept             1.8949
+
+
+Odds Ratios...
+                       Class
+Variable                  no
+============================
+campaign              1.1136
+month=may              1.633
+month=jun             1.0354
+month=jul             1.1219
+month=aug             0.9457
+month=oct              0.203
+month=nov             1.2095
+month=dec             0.1728
+month=jan             1.2389
+month=feb             0.6633
+month=mar             0.1382
+month=apr             0.5279
+month=sep             0.1833
+balance                    1
+job=management        0.8463
+job=technician        0.9934
+job=entrepreneur      1.2841
+job=blue-collar        1.392
+job=unknown           1.0839
+job=retired           0.5939
+job=admin.            0.9475
+job=services          1.1572
+job=self-employed     0.9437
+job=unemployed        0.7758
+job=housemaid         1.4058
+job=student           0.4169
+
+
+Time taken to build model: 3.18 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       39878               88.2042 %
+Incorrectly Classified Instances      5333               11.7958 %
+Kappa statistic                          0.0833
+Mean absolute error                      0.1899
+Root mean squared error                  0.3084
+Relative absolute error                 91.9211 %
+Root relative squared error             95.9568 %
+Total Number of Instances            45211     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.991    0.939    0.888      0.991    0.937      0.136    0.692     0.935     no
+                 0.061    0.009    0.468      0.061    0.108      0.136    0.692     0.275     yes
+Weighted Avg.    0.882    0.830    0.839      0.882    0.840      0.136    0.692     0.857     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 39555   367 |     a = no
+  4966   323 |     b = yes
+

@@ -1,0 +1,54 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.OneR -B 6
+Relation:     bank-oner
+Instances:    45211
+Attributes:   5
+              age
+              martial
+              education
+              housing
+              y
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+age:
+	< 18.5	-> yes
+	< 67.5	-> no
+	< 68.5	-> yes
+	< 72.5	-> no
+	< 73.5	-> yes
+	< 83.5	-> no
+	< 93.5	-> yes
+	>= 93.5	-> no
+(39940/45211 instances correct)
+
+
+Time taken to build model: 0.05 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       39890               88.2307 %
+Incorrectly Classified Instances      5321               11.7693 %
+Kappa statistic                          0.0203
+Mean absolute error                      0.1177
+Root mean squared error                  0.3431
+Relative absolute error                 56.9628 %
+Root relative squared error            106.7396 %
+Total Number of Instances            45211     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.997    0.985    0.884      0.997    0.937      0.059    0.506     0.884     no
+                 0.015    0.003    0.414      0.015    0.028      0.059    0.506     0.121     yes
+Weighted Avg.    0.882    0.870    0.829      0.882    0.831      0.059    0.506     0.795     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 39813   109 |     a = no
+  5212    77 |     b = yes
+

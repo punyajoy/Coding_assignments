@@ -1,0 +1,35 @@
+Bash-Beginners-Guide.pdf
+a.out
+abs-guide.pdf
+bash.pdf
+input.txt
+output.txt
+piping.c
+s
+shell.c
+shell_final.c
+pid = 17350 status=0 exited successfully
+Bash-Beginners-Guide.pdf
+a.out
+abs-guide.pdf
+bash.pdf
+input.txt
+output.txt
+piping.c
+s
+shell.c
+shell_final.c
+
+pid = 10558 status=0 exited successfully
+Bash-Beginners-Guide.pdf
+a.out
+abs-guide.pdf
+bash.pdf
+input.txt
+output.txt
+piping.c
+s
+shell.c
+shell_final.c
+
+pid = 23808 status=0 exited successfully

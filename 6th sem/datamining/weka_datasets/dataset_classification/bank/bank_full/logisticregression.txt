@@ -1,0 +1,164 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     bank-full
+Instances:    45211
+Attributes:   17
+              age
+              job
+              marital
+              education
+              default
+              balance
+              housing
+              loan
+              contact
+              day
+              month
+              duration
+              campaign
+              pdays
+              previous
+              poutcome
+              y
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                         Class
+Variable                    no
+==============================
+age                    -0.0001
+job=management         -0.0046
+job=technician          0.0061
+job=entrepreneur        0.1872
+job=blue-collar           0.14
+job=unknown             0.1433
+job=retired            -0.4223
+job=admin.             -0.1699
+job=services            0.0539
+job=self-employed       0.1284
+job=unemployed          0.0068
+job=housemaid           0.3341
+job=student            -0.5521
+marital=married         0.1349
+marital=single          -0.137
+marital=divorced       -0.0445
+education=tertiary      -0.164
+education=secondary     0.0314
+education=unknown      -0.0356
+education=primary       0.2149
+default=yes             0.0167
+balance                     -0
+housing=no             -0.6754
+loan=yes                0.4254
+contact=unknown         0.9287
+contact=cellular       -0.6945
+contact=telephone      -0.5312
+day                      -0.01
+month=may               0.0416
+month=jun              -0.8112
+month=jul               0.4732
+month=aug               0.3363
+month=oct               -1.239
+month=nov               0.5158
+month=dec              -1.0487
+month=jan               0.9042
+month=feb              -0.2102
+month=mar              -1.9474
+month=apr              -0.3576
+month=sep              -1.2316
+duration               -0.0042
+campaign                0.0908
+pdays                   0.0001
+previous               -0.0102
+poutcome=unknown         0.307
+poutcome=failure        0.2152
+poutcome=other          0.0117
+poutcome=success       -2.0759
+Intercept               4.0475
+
+
+Odds Ratios...
+                         Class
+Variable                    no
+==============================
+age                     0.9999
+job=management          0.9954
+job=technician          1.0061
+job=entrepreneur        1.2059
+job=blue-collar         1.1502
+job=unknown             1.1541
+job=retired             0.6556
+job=admin.              0.8437
+job=services            1.0554
+job=self-employed        1.137
+job=unemployed          1.0068
+job=housemaid           1.3967
+job=student             0.5758
+marital=married         1.1445
+marital=single           0.872
+marital=divorced        0.9565
+education=tertiary      0.8487
+education=secondary     1.0319
+education=unknown        0.965
+education=primary       1.2397
+default=yes             1.0168
+balance                      1
+housing=no               0.509
+loan=yes                1.5302
+contact=unknown         2.5311
+contact=cellular        0.4993
+contact=telephone       0.5879
+day                     0.9901
+month=may               1.0424
+month=jun               0.4443
+month=jul               1.6052
+month=aug               1.3998
+month=oct               0.2897
+month=nov                1.675
+month=dec               0.3504
+month=jan               2.4699
+month=feb               0.8104
+month=mar               0.1426
+month=apr               0.6994
+month=sep               0.2918
+duration                0.9958
+campaign                 1.095
+pdays                   1.0001
+previous                0.9899
+poutcome=unknown        1.3593
+poutcome=failure        1.2401
+poutcome=other          1.0118
+poutcome=success        0.1254
+
+
+Time taken to build model: 6.8 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances       40758               90.1506 %
+Incorrectly Classified Instances      4453                9.8494 %
+Kappa statistic                          0.4026
+Mean absolute error                      0.1391
+Root mean squared error                  0.2667
+Relative absolute error                 67.3306 %
+Root relative squared error             82.9921 %
+Total Number of Instances            45211     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.975    0.654    0.918      0.975    0.946      0.427    0.907     0.985     no
+                 0.346    0.025    0.648      0.346    0.451      0.427    0.907     0.551     yes
+Weighted Avg.    0.902    0.580    0.887      0.902    0.888      0.427    0.907     0.934     
+
+=== Confusion Matrix ===
+
+     a     b   <-- classified as
+ 38927   995 |     a = no
+  3458  1831 |     b = yes
+
